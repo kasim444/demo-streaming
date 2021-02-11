@@ -12,14 +12,15 @@ const GlobalStyles = createGlobalStyle`
     --color-primary-2: ${COLORS.primary2};
     --color-primary-3: ${COLORS.primary3};
     --color-text: ${COLORS.text};
+    --color-text-white: ${COLORS.textWhite};
     --color-text-head: ${COLORS.textHead};
     --color-text-parag: ${COLORS.textParag};
     --color-white: ${COLORS.white};
   }
 
   ::selection {
-    background-color: var(----color-blue);
-    color: var(---color-blue);
+    background-color: var(--color-blue);
+    color: var(--color-white);
   }
 
   * {
@@ -30,6 +31,7 @@ const GlobalStyles = createGlobalStyle`
 
   html {
     scroll-behavior: smooth;
+    font-size: 16px;
   }
 
   html, body, #__next {

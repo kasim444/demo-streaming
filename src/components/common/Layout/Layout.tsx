@@ -1,6 +1,7 @@
 import { NextSeo } from 'next-seo'
 import SEO from '@/next-seo.config'
 import { Header, Footer } from '@/components/common'
+import { Container } from 'react-awesome-styled-grid'
 
 interface Layout {
   title: string
@@ -24,7 +25,7 @@ const Layout = ({ title, subTitle, path, children }: Layout) => {
         }}
       />
       <Header subTitle={subTitle} />
-      {children}
+      <Container>{children}</Container>
       <Footer />
     </>
   )

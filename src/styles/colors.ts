@@ -9,6 +9,7 @@ const COLORS = {
   text: '#000000',
   textHead: '#0C0E17',
   textParag: '#0A0D19',
+  textWhite: '#FDFDFD',
   white: '#FFFFFF',
 }
 export default COLORS

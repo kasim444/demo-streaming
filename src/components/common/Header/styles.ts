@@ -16,6 +16,8 @@ export const MainHeader = styled.div`
   justify-content: space-between;
   padding: ${({ theme }) => theme.space['3.5']} 0
     ${({ theme }) => theme.space['2.5']} 0;
+  box-shadow: 0px 3px 10px rgb(0 0 0 / 66%);
+  z-index: 1;
 `
 
 export const SubHeader = styled.div`
@@ -24,10 +26,31 @@ export const SubHeader = styled.div`
   display: flex;
   align-items: center;
   justify-content: space-between;
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
 `
 
 export const Nav = styled.nav`
   display: flex;
   align-items: center;
   justify-content: center;
+
+  & > button + button {
+    margin-left: ${({ theme }) => theme.space[6]};
+  }
+`
+
+export const Logo = styled.h5`
+  font-family: Raleway;
+  font-weight: 600;
+  font-size: 33px;
+  line-height: 39px;
+  color: var(--color-text-white);
+`
+
+export const SubTitle = styled.h6`
+  font-family: Raleway;
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 28px;
+  color: var(--color-text-white);
 `

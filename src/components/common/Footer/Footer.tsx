@@ -1,11 +1,12 @@
 import * as S from './styles'
+import { Container } from 'react-awesome-styled-grid'
 
-const Footer = () => {
-  return (
-    <S.FooterContainer>
+const Footer = () => (
+  <S.FooterContainer>
+    <Container>
       <h6>Footer</h6>
-    </S.FooterContainer>
-  )
-}
+    </Container>
+  </S.FooterContainer>
+)
 
 export default Footer
