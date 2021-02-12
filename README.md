@@ -22,4 +22,5 @@ To get started run:
 ## To Do List
 
 - Add Redux
-- Add Stortybook
+- Add Analytics
+- Add Testing Library
