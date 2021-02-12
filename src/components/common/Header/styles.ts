@@ -5,8 +5,6 @@ export const HeaderContainer = styled.header`
   display: flex;
   flex-direction: column;
   justify-content: center;
-  position: sticky;
-  top: 0;
 `
 
 export const MainHeader = styled.div`

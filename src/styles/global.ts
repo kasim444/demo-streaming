@@ -15,6 +15,7 @@ const GlobalStyles = createGlobalStyle`
     --color-text-white: ${COLORS.textWhite};
     --color-text-head: ${COLORS.textHead};
     --color-text-parag: ${COLORS.textParag};
+    --color-text-caption : ${COLORS.textCaption};
     --color-white: ${COLORS.white};
   }
 
@@ -43,6 +44,10 @@ const GlobalStyles = createGlobalStyle`
     Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     background-color: var(--color-white);
     color: var(---color-text);
+  }
+
+  a {
+    text-decoration: none;
   }
 `
 

@@ -9,6 +9,7 @@ const COLORS = {
   text: '#000000',
   textHead: '#0C0E17',
   textParag: '#0A0D19',
+  textCaption: '#1E1E1E',
   textWhite: '#FDFDFD',
   white: '#FFFFFF',
 }

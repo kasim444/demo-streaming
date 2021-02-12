@@ -1,13 +1,11 @@
-import { Layout } from '@/components/common'
+import { Layout, Home } from '@/components/common'
 
-const Home = () => {
+const HomeScreen = () => {
   return (
     <Layout title="DEMO Streaming" subTitle="Popular Titles" path="/">
-      <section>
-        <h1>DEMO Streaming</h1>
-      </section>
+      <Home />
     </Layout>
   )
 }
 
-export default Home
+export default HomeScreen

@@ -1,6 +1,5 @@
 import * as S from './styles'
 import { Button } from '@/components/ui'
-import {} from '@/components/common'
 import { Container, Row, Col } from 'react-awesome-styled-grid'
 
 interface HeaderProps {
