@@ -1,7 +1,7 @@
 import styled from 'styled-components'
 import media from 'styled-media-query'
 
-export const Styled_Home = styled.section`
+export const Home = styled.section`
   display: grid;
   grid-template-columns: 1fr;
   grid-column-gap: 14.5px;

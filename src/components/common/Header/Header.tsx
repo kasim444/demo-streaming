@@ -11,7 +11,7 @@ const Header = ({ subTitle }: HeaderProps) => {
   const handleFreeTrial = () => console.log('Free trial action')
 
   return (
-    <S.HeaderContainer>
+    <S.Header>
       <S.MainHeader>
         <Container>
           <Flex justify="space-between">
@@ -30,7 +30,7 @@ const Header = ({ subTitle }: HeaderProps) => {
           <S.SubTitle>{subTitle}</S.SubTitle>
         </Container>
       </S.SubHeader>
-    </S.HeaderContainer>
+    </S.Header>
   )
 }
 

@@ -9,19 +9,19 @@ export default {
 } as Meta
 
 export const PopularMovies: Story = (args) => (
-  <S.Styled_Home>
+  <S.Home>
     <Card href={'/movies'} variant="PMovies" title="Popular Movies" {...args} />
-  </S.Styled_Home>
+  </S.Home>
 )
 
 export const PopularSeries: Story = (args) => (
-  <S.Styled_Home>
+  <S.Home>
     <Card href={'/series'} variant="PSeries" title="Popular Series" {...args} />
-  </S.Styled_Home>
+  </S.Home>
 )
 
 export const Item: Story = (args) => (
-  <S.Styled_Home>
+  <S.Home>
     <Card
       href={'/series/wolf-creek'}
       variant="Item"
@@ -31,5 +31,5 @@ export const Item: Story = (args) => (
       }
       {...args}
     />
-  </S.Styled_Home>
+  </S.Home>
 )

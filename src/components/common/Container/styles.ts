@@ -1,7 +1,7 @@
 import styled from 'styled-components'
 import media from 'styled-media-query'
 
-export const StyledContainer = styled.div`
+export const Container = styled.div`
   margin-right: auto;
   margin-left: auto;
   padding-right: 15px;

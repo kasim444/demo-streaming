@@ -1,6 +1,7 @@
 import { NextSeo } from 'next-seo'
 import SEO from '@/next-seo.config'
-import { Header, Footer } from '@/components/common'
+import { Header, Footer, Container } from '@/components/common'
+import Main from './styles'
 
 interface Layout {
   title: string
@@ -23,9 +24,11 @@ const Layout = ({ title, subTitle, path, children }: Layout) => {
           title,
         }}
       />
-      <Header subTitle={subTitle} />
-      {children}
-      <Footer />
+      <Main>
+        <Header subTitle={subTitle} />
+        <Container>{children}</Container>
+        <Footer />
+      </Main>
     </>
   )
 }

@@ -5,7 +5,7 @@ interface ContainerProps {
 }
 
 const Container = ({ children }: ContainerProps) => (
-  <S.StyledContainer>{children}</S.StyledContainer>
+  <S.Container>{children}</S.Container>
 )
 
 export default Container

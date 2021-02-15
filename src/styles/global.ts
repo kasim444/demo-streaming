@@ -5,6 +5,7 @@ import FONTS from './fonts'
 const GlobalStyles = createGlobalStyle`
   :root {
     --color-black: ${COLORS.black};
+    --color-black-2: ${COLORS.black2};
     --color-blue: ${COLORS.blue};
     --color-gray: ${COLORS.gray};
     --color-gray-darker: ${COLORS.gray2};
@@ -16,6 +17,7 @@ const GlobalStyles = createGlobalStyle`
     --color-text-head: ${COLORS.textHead};
     --color-text-parag: ${COLORS.textParag};
     --color-text-caption : ${COLORS.textCaption};
+    --color-text-footer-nav: ${COLORS.textFooterNav};
     --color-white: ${COLORS.white};
   }
 
