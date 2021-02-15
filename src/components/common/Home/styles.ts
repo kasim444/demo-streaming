@@ -1,4 +1,3 @@
-import { config } from 'react-awesome-styled-grid'
 import styled from 'styled-components'
 
 export const Styled_Home = styled.section`
@@ -9,11 +8,4 @@ export const Styled_Home = styled.section`
   width: 100%;
   padding-top: 35px;
   padding-bottom: 60px;
-
-  ${(props) => config(props).media['sm']`
-    grid-template-columns: repeat(3, 1fr);
-  `}
-  ${(props) => config(props).media['md']`
-    grid-template-columns: repeat(7, 1fr);
-  `}
 `

@@ -8521,11 +8521,6 @@ rc@^1.2.7:
     minimist "^1.2.0"
     strip-json-comments "~2.0.1"
 
-react-awesome-styled-grid@^3.0.12:
-  version "3.0.12"
-  resolved "https://registry.yarnpkg.com/react-awesome-styled-grid/-/react-awesome-styled-grid-3.0.12.tgz#10cee2d4064798ccef27dafa7a90efa83d779119"
-  integrity sha512-pBsEKF6dm8DDWpwhrMlf5EqgXAVhIKOLfAAgU12FErhuzxCvycA9fCJOydk4Zi3bE20bL/NGAvjVFGijhZN5lQ==
-
 react-color@^2.17.0:
   version "2.19.3"
   resolved "https://registry.yarnpkg.com/react-color/-/react-color-2.19.3.tgz#ec6c6b4568312a3c6a18420ab0472e146aa5683d"
