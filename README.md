@@ -24,3 +24,11 @@ To get started run:
 - Add Redux
 - Add Analytics
 - Add Testing Library
+
+## Cli Commands
+
+### storybook
+
+Showing UIs with components and design systems.
+
+`yarn storybook`

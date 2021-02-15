@@ -1,4 +1,5 @@
 import * as S from './styles'
+import { Container, Flex } from '@/components/common'
 import { Button } from '@/components/ui'
 
 interface HeaderProps {
@@ -12,16 +13,22 @@ const Header = ({ subTitle }: HeaderProps) => {
   return (
     <S.HeaderContainer>
       <S.MainHeader>
-        <S.Logo>DEMO Streaming</S.Logo>
-        <S.Nav>
-          <Button variant="ghost" onClick={handleLoggin}>
-            Log in
-          </Button>
-          <Button onClick={handleFreeTrial}>Start your free trial</Button>
-        </S.Nav>
+        <Container>
+          <Flex justify="space-between">
+            <S.Logo>DEMO Streaming</S.Logo>
+            <S.Nav>
+              <Button variant="ghost" onClick={handleLoggin}>
+                Log in
+              </Button>
+              <Button onClick={handleFreeTrial}>Start your free trial</Button>
+            </S.Nav>
+          </Flex>
+        </Container>
       </S.MainHeader>
       <S.SubHeader>
-        <S.SubTitle>{subTitle}</S.SubTitle>
+        <Container>
+          <S.SubTitle>{subTitle}</S.SubTitle>
+        </Container>
       </S.SubHeader>
     </S.HeaderContainer>
   )
