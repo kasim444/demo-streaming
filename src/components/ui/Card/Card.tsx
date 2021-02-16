@@ -1,5 +1,5 @@
+import { Link } from '@ui'
 import * as S from './styles'
-import { Link } from '@/components/ui'
 
 interface ItemProps {
   variant: 'Item'

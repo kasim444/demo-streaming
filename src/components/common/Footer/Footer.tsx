@@ -1,14 +1,14 @@
-import * as S from './styles'
+import { Container } from '@common'
 import {
+  AppStore,
   Facebook,
   Instagram,
-  Twitter,
-  AppStore,
   PlayStore,
+  Twitter,
   WindowsStore,
-} from '@/components/icons'
-import { Container } from '@/components/common'
-import { Link } from '../../ui'
+} from '@icons'
+import { Link } from '@ui'
+import * as S from './styles'
 
 const Footer = () => (
   <S.Footer>

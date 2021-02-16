@@ -4,8 +4,7 @@ import media from 'styled-media-query'
 export const Home = styled.section`
   display: grid;
   grid-template-columns: 1fr;
-  grid-column-gap: 14.5px;
-  grid-row-gap: 45px;
+  gap: 45px 14.5px;
   width: 100%;
   padding-top: 35px;
   padding-bottom: 60px;

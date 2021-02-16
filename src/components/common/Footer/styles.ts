@@ -18,7 +18,7 @@ export const Footer__Inner = styled.div`
     'social social'
     'copyright copyright';
   justify-items: center;
-  grid-gap: ${({ theme }) => theme.space[4]};
+  gap: ${({ theme }) => theme.space[4]};
 
   ${media.greaterThan('medium')`
     grid-template-columns: repeat(2, 1fr);

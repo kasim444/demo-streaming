@@ -1,6 +1,6 @@
+import { Container, Flex } from '@common'
+import { Button, Link } from '@ui'
 import * as S from './styles'
-import { Container, Flex } from '@/components/common'
-import { Button } from '@/components/ui'
 
 interface HeaderProps {
   subTitle: string
@@ -15,7 +15,9 @@ const Header = ({ subTitle }: HeaderProps) => {
       <S.MainHeader>
         <Container>
           <Flex justify="space-between">
-            <S.Logo>DEMO Streaming</S.Logo>
+            <Link href="/">
+              <S.Logo>DEMO Streaming</S.Logo>
+            </Link>
             <S.Nav>
               <Button variant="ghost" onClick={handleLoggin}>
                 Log in

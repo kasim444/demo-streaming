@@ -1,6 +1,6 @@
-import { NextSeo } from 'next-seo'
+import { Container, Footer, Header } from '@common'
 import SEO from '@/next-seo.config'
-import { Header, Footer, Container } from '@/components/common'
+import { NextSeo } from 'next-seo'
 import Main from './styles'
 
 interface Layout {

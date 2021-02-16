@@ -1,5 +1,5 @@
+import { Card } from '@ui'
 import * as S from './styles'
-import { Card } from '@/components/ui'
 
 const Home = () => (
   <S.Home>

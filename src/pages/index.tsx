@@ -1,4 +1,4 @@
-import { Layout, Home } from '@/components/common'
+import { Layout, Home } from '@common'
 
 const HomeScreen = () => {
   return (

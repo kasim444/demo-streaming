@@ -6,7 +6,7 @@ import Document, {
   DocumentContext,
 } from 'next/document'
 import { ServerStyleSheet } from 'styled-components'
-import { Head } from '@/components/common'
+import { Head } from '@common'
 
 export default class MyDocument extends Document {
   static async getInitialProps(ctx: DocumentContext) {
