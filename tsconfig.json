@@ -11,7 +11,8 @@
       "@/utils/*": ["./src/utils/*"],
       "@interfaces": ["./src/interfaces"],
       "@store": ["./src/store"],
-      "@/config/*": ["./src/config/*"],
+      "@config": ["./src/config"],
+      "@/services/*": ["./src/services/*"]
     },
     "allowJs": true,
     "alwaysStrict": true,

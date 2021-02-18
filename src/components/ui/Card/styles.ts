@@ -1,4 +1,16 @@
+import { LazyLoadImage } from 'react-lazy-load-image-component'
 import styled from 'styled-components'
+import Link from '../Link/Link'
+
+export const CardContainer = styled(Link)`
+  &:hover figcaption {
+    text-decoration: underline;
+  }
+
+  &:hover img {
+    transform: scale(1.05);
+  }
+`
 
 export const Card = styled.figure`
   width: 100%;
@@ -9,7 +21,7 @@ export const Card__Body = styled.div`
   margin-bottom: ${({ theme }) => theme.space[2]};
 `
 
-export const Card__Poster = styled.img`
+export const Card__Poster = styled(LazyLoadImage)`
   aspect-ratio: 2/3;
   width: 100%;
   object-fit: contain;

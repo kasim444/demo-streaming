@@ -1,9 +1,9 @@
-import { Layout, Home } from '@common'
+import { Layout, SeriesCollection } from '@common'
 
 const SeriesScreen = () => {
   return (
-    <Layout title="DEMO Streaming" subTitle="Popular Series" path="/">
-      <Home />
+    <Layout title="DEMO Streaming" subTitle="Popular Series" path="/series">
+      <SeriesCollection />
     </Layout>
   )
 }

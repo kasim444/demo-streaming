@@ -1,12 +1,13 @@
 import SEO from '@/next-seo.config'
 import GlobalStyles from '@/styles/global'
 import theme from '@/styles/theme'
+import store from '@store'
 import { DefaultSeo } from 'next-seo'
 import { AppProps } from 'next/app'
 import NextHead from 'next/head'
-import { ThemeProvider } from 'styled-components'
 import { Provider } from 'react-redux'
-import store from '@store'
+import { ThemeProvider } from 'styled-components'
+import 'react-lazy-load-image-component/src/effects/blur.css'
 
 export default function App({ Component, pageProps }: AppProps) {
   return (

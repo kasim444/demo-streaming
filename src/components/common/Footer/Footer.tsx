@@ -15,7 +15,7 @@ const Footer = () => (
     <Container>
       <S.Footer__Inner>
         <S.Footer__Nav>
-          <S.Nav__Link href="/home">Home</S.Nav__Link>
+          <S.Nav__Link href="/">Home</S.Nav__Link>
           <S.Nav__Link href="/terms-and-conditions">
             Terms and Conditions
           </S.Nav__Link>

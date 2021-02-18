@@ -1,13 +1,13 @@
 import styled from 'styled-components'
 import media from 'styled-media-query'
 
-export const Home = styled.section`
+export const GridShellContainer = styled.section`
   display: grid;
   grid-template-columns: 1fr;
-  gap: 45px 14.5px;
+  gap: ${({ theme }) => theme.space['10']} ${({ theme }) => theme.space['3.5']};
   width: 100%;
-  padding-top: 35px;
-  padding-bottom: 60px;
+  padding-top: ${({ theme }) => theme.space['9']};
+  padding-bottom: ${({ theme }) => theme.space['16']};
 
   ${media.greaterThan('medium')`
     grid-template-columns: repeat(3, 1fr);

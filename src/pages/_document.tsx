@@ -1,12 +1,12 @@
+import { Head } from '@common'
 import Document, {
-  Html,
+  DocumentContext,
   Head as NextHead,
+  Html,
   Main,
   NextScript,
-  DocumentContext,
 } from 'next/document'
 import { ServerStyleSheet } from 'styled-components'
-import { Head } from '@common'
 
 export default class MyDocument extends Document {
   static async getInitialProps(ctx: DocumentContext) {

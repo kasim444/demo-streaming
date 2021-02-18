@@ -1,6 +1,6 @@
 import { Story, Meta } from '@storybook/react/types-6-0'
 import Card from './Card'
-import * as S from '@/components/common/Home/styles'
+import GridShell from '../../common/GridShell/GridShell'
 
 export default {
   title: 'Card',
@@ -9,19 +9,19 @@ export default {
 } as Meta
 
 export const PopularMovies: Story = (args) => (
-  <S.Home>
+  <GridShell>
     <Card href={'/movies'} variant="PMovies" title="Popular Movies" {...args} />
-  </S.Home>
+  </GridShell>
 )
 
 export const PopularSeries: Story = (args) => (
-  <S.Home>
+  <GridShell>
     <Card href={'/series'} variant="PSeries" title="Popular Series" {...args} />
-  </S.Home>
+  </GridShell>
 )
 
 export const Item: Story = (args) => (
-  <S.Home>
+  <GridShell>
     <Card
       href={'/series/wolf-creek'}
       variant="Item"
@@ -31,5 +31,5 @@ export const Item: Story = (args) => (
       }
       {...args}
     />
-  </S.Home>
+  </GridShell>
 )

@@ -1,11 +1,21 @@
+import { GridShell } from '@common'
 import { Card } from '@ui'
-import * as S from './styles'
 
 const Home = () => (
-  <S.Home>
-    <Card href={'/series'} variant="PSeries" title="Popular Series" />
-    <Card href={'/movies'} variant="PMovies" title="Popular Movies" />
-  </S.Home>
+  <GridShell>
+    <Card
+      key={'series'}
+      href={'/series'}
+      variant="PSeries"
+      title="Popular Series"
+    />
+    <Card
+      key={'movies'}
+      href={'/movies'}
+      variant="PMovies"
+      title="Popular Movies"
+    />
+  </GridShell>
 )
 
 export default Home

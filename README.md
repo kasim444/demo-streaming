@@ -21,7 +21,6 @@ To get started run:
 
 ## To Do List
 
-- Add Redux
 - Add Analytics
 - Add Testing Library
 

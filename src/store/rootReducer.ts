@@ -1,8 +1,8 @@
 import { combineReducers } from '@reduxjs/toolkit'
-import { feedsSlice } from './features/feeds/feedsSlice'
+import { feedApi } from '@/services/feed'
 
 const rootReducer = combineReducers({
-  feeds: feedsSlice.reducer,
+  [feedApi.reducerPath]: feedApi.reducer,
 })
 
 export type RootState = ReturnType<typeof rootReducer>

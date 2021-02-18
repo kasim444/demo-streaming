@@ -2,13 +2,7 @@ import { IconProps } from './icon.props'
 import Svg from './styles'
 
 const PlayStore = (props: IconProps) => (
-  <Svg
-    xmlns="http://www.w3.org/2000/svg"
-    width={135.716}
-    height={40.019}
-    viewBox="0 0 135.716 40.019"
-    {...props}
-  >
+  <Svg width={135.716} height={40.019} viewBox="0 0 135.716 40.019" {...props}>
     <defs>
       <clipPath id="prefix__a">
         <path d="M0 0h124v48H0V0z" />
