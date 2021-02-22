@@ -15,7 +15,7 @@ To get started run:
 
 - Typescript
 - Next.js
-- Redux Toolkit
+- Redux Toolkit && RTK Query
 - Styled Components
 - Storybook
 

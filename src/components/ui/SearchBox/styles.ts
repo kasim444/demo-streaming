@@ -1,4 +1,5 @@
 import styled from 'styled-components'
+import media from 'styled-media-query'
 
 export const SearchBox = styled.div`
   display: inline-block;
@@ -28,6 +29,10 @@ export const SearchBox__Input = styled.input`
   &:focus {
     outline: none;
   }
+
+  ${media.greaterThan('medium')`
+    width: 370px;
+  `}
 `
 
 export const SearchBox__Button = styled.button`

@@ -6,4 +6,6 @@ export default {
   component: SearchBox,
 } as Meta
 
-export const Basic: Story = (args) => <SearchBox {...args} />
+export const Basic: Story = (args) => (
+  <SearchBox onChange={(e) => e.target.value} {...args} />
+)

@@ -1,6 +1,5 @@
-import { useGetFeedsQuery } from '@/src/services/feed'
 import { GridShell } from '@common'
-import { FeedType } from '@interfaces'
+import { FeedsType, FeedType } from '@interfaces'
 import { Card } from '@ui'
 import {
   ScrollPosition,
@@ -10,11 +9,17 @@ import { CommonText } from './styles'
 
 interface SeriesCollectionProps {
   scrollPosition: ScrollPosition
+  collection: FeedsType | undefined
+  isError: boolean
+  isLoading: boolean
 }
 
-const SeriesCollection = ({ scrollPosition }: SeriesCollectionProps) => {
-  const { data, isError, isLoading } = useGetFeedsQuery('')
-
+const SeriesCollection = ({
+  scrollPosition,
+  collection,
+  isError,
+  isLoading,
+}: SeriesCollectionProps) => {
   if (isError) {
     return (
       <GridShell>
@@ -23,7 +28,7 @@ const SeriesCollection = ({ scrollPosition }: SeriesCollectionProps) => {
     )
   }
 
-  if (isLoading) {
+  if (isLoading || !collection) {
     return (
       <GridShell>
         <CommonText>Loading...</CommonText>
@@ -33,7 +38,7 @@ const SeriesCollection = ({ scrollPosition }: SeriesCollectionProps) => {
 
   return (
     <GridShell>
-      {data?.entries.map((s: FeedType, i: number) => (
+      {collection.entries.slice(0, 21).map((s: FeedType, i: number) => (
         <Card
           key={i.toString()}
           href={encodeURI(`/series/${s.title.toLowerCase()}`)}

@@ -7,7 +7,7 @@ interface Layout {
   title: string
   subTitle: string
   path: string
-  children: JSX.Element
+  children: JSX.Element | JSX.Element[]
 }
 
 const Layout = ({ title, subTitle, path, children }: Layout) => {
