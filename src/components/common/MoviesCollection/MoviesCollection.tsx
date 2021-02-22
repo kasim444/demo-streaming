@@ -23,7 +23,7 @@ const MoviesCollection = ({ scrollPosition }: MoviesCollectionProps) => {
     )
   }
 
-  if (isLoading) {
+  if (isLoading || !data) {
     return (
       <GridShell>
         <CommonText>Loading...</CommonText>
