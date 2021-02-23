@@ -1,6 +1,5 @@
-import { useGetFeedsQuery } from '@/src/services/feed'
 import { GridShell } from '@common'
-import { FeedType } from '@interfaces'
+import { FeedsType, FeedType } from '@interfaces'
 import { Card } from '@ui'
 import {
   ScrollPosition,
@@ -10,11 +9,17 @@ import { CommonText } from './styles'
 
 interface MoviesCollectionProps {
   scrollPosition: ScrollPosition
+  collection: FeedsType | undefined
+  isError: boolean
+  isLoading: boolean
 }
 
-const MoviesCollection = ({ scrollPosition }: MoviesCollectionProps) => {
-  const { data, isError, isLoading } = useGetFeedsQuery('')
-
+const MoviesCollection = ({
+  scrollPosition,
+  collection,
+  isError,
+  isLoading,
+}: MoviesCollectionProps) => {
   if (isError) {
     return (
       <GridShell>
@@ -23,7 +28,7 @@ const MoviesCollection = ({ scrollPosition }: MoviesCollectionProps) => {
     )
   }
 
-  if (isLoading || !data) {
+  if (isLoading || !collection) {
     return (
       <GridShell>
         <CommonText>Loading...</CommonText>
@@ -33,7 +38,7 @@ const MoviesCollection = ({ scrollPosition }: MoviesCollectionProps) => {
 
   return (
     <GridShell>
-      {data?.entries.map((s: FeedType, i: number) => (
+      {collection.entries.slice(0, 21).map((s: FeedType, i: number) => (
         <Card
           key={i.toString()}
           href={encodeURI(`/series/${s.title.toLowerCase()}`)}

@@ -1,23 +1,26 @@
-import { createApi, fetchBaseQuery } from '@rtk-incubator/rtk-query'
+import {
+  filterByProgramType,
+  sortByTitleCollection,
+} from '@/utils/filter-collection'
 import { server } from '@config'
+import { createApi, fetchBaseQuery } from '@rtk-incubator/rtk-query'
 import { FeedsType } from '../interfaces'
-import { sortByTitleCollection } from '@/utils/filter-collection'
 
 export const feedApi = createApi({
   baseQuery: fetchBaseQuery({ baseUrl: `${server}/api` }),
-  entityTypes: [],
   endpoints: (build) => ({
-    getFeeds: build.query({
+    getSeries: build.query({
       query: () => '/feed',
-      transformResponse: ({ total, entries }: FeedsType) => {
-        return {
-          total,
-          entries: sortByTitleCollection(entries),
-        }
-      },
+      transformResponse: (data: FeedsType) =>
+        filterByProgramType(sortByTitleCollection(data)),
+    }),
+    getMovies: build.query({
+      query: () => '/feed',
+      transformResponse: (data: FeedsType) =>
+        filterByProgramType(sortByTitleCollection(data), 'movie'),
     }),
   }),
 })
 
 // Export hooks for usage in functional components
-export const { useGetFeedsQuery } = feedApi
+export const { useGetSeriesQuery, useGetMoviesQuery } = feedApi
