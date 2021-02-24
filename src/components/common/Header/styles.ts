@@ -1,4 +1,5 @@
 import styled from 'styled-components'
+import media from 'styled-media-query'
 
 export const Header = styled.header`
   width: 100%;
@@ -51,4 +52,8 @@ export const SubTitle = styled.h6`
   font-size: 24px;
   line-height: 28px;
   color: var(--color-text-white);
+
+  ${media.lessThan('medium')`
+    text-align: center;
+  `}
 `

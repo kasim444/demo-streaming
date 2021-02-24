@@ -11,6 +11,7 @@ const COLORS = {
   textHead: '#0C0E17',
   textParag: '#0A0D19',
   textCaption: '#1E1E1E',
+  textPlaceholder: '#B4B4B4',
   textFooterNav: '#BABFC3',
   textWhite: '#FDFDFD',
   white: '#FFFFFF',

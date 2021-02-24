@@ -1,4 +1,5 @@
 import styled from 'styled-components'
+import media from 'styled-media-query'
 
 type FlexProps = {
   className?: string
@@ -25,6 +26,12 @@ const Flex = styled.div.attrs((props) => ({
   &.Flex--FilterSection {
     padding-top: ${({ theme }) => theme.space['9']};
   }
+
+  ${media.lessThan('medium')`
+    flex-direction: column;
+    align-items: center;
+    row-gap: 1rem;
+  `}
 `
 
 export default Flex

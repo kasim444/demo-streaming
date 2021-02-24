@@ -21,4 +21,9 @@ export const GridShellContainer = styled.section`
   ${media.greaterThan('huge')`
     grid-template-columns: repeat(7, 1fr);
   `}
+
+
+  ${media.lessThan('medium')`
+    place-items: center;
+  `}
 `

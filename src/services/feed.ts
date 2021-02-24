@@ -1,7 +1,4 @@
-import {
-  filterByProgramType,
-  sortByTitleCollection,
-} from '@/utils/filter-collection'
+import { filterByProgramType, sortCollection } from '@/utils/filter-collection'
 import { server } from '@config'
 import { createApi, fetchBaseQuery } from '@rtk-incubator/rtk-query'
 import { FeedsType } from '../interfaces'
@@ -12,12 +9,12 @@ export const feedApi = createApi({
     getSeries: build.query({
       query: () => '/feed',
       transformResponse: (data: FeedsType) =>
-        filterByProgramType(sortByTitleCollection(data)),
+        filterByProgramType(sortCollection(data, 'title')),
     }),
     getMovies: build.query({
       query: () => '/feed',
       transformResponse: (data: FeedsType) =>
-        filterByProgramType(sortByTitleCollection(data), 'movie'),
+        filterByProgramType(sortCollection(data, 'title'), 'movie'),
     }),
   }),
 })

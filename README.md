@@ -19,11 +19,6 @@ To get started run:
 - Styled Components
 - Storybook
 
-## To Do List
-
-- Add Analytics
-- Add Testing Library
-
 ## Cli Commands
 
 ### storybook
@@ -31,3 +26,8 @@ To get started run:
 Showing UIs with components and design systems.
 
 `yarn storybook`
+
+## To Do List
+
+- Add Analytics
+- Add Testing Library

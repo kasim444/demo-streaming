@@ -17,6 +17,7 @@ const GlobalStyles = createGlobalStyle`
     --color-text-head: ${COLORS.textHead};
     --color-text-parag: ${COLORS.textParag};
     --color-text-caption : ${COLORS.textCaption};
+    --color-text-placeholder: ${COLORS.textPlaceholder};
     --color-text-footer-nav: ${COLORS.textFooterNav};
     --color-white: ${COLORS.white};
   }
